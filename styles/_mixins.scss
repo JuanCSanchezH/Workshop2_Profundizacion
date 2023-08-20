@@ -1,0 +1,59 @@
+
+@mixin dropdown-design(){
+    .dropdown-item{
+        display: flex;
+        gap: 17px;
+        margin-bottom: 10px;
+        padding: 0;
+        &__fig{
+            display: flex;
+            width: 15px;
+            align-items: center;
+            margin-bottom: 0;
+        }
+        & p{
+            margin-bottom: 0;
+            text-align: start;
+        }
+    }
+}
+
+@mixin font-design(){
+    .main{
+        &__section{
+            &__figure{ width: 100%;}
+        }
+    }
+}
+
+@mixin botones($width-login: 100%, $width-register: 100%){
+    .botones__login{
+        border: none;
+        background-color: white;
+        width: $width-login;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+    .botones__register{
+        border: 2px solid rgb(151, 151, 151);
+        border-radius: 15px;
+        background-color: white;
+        width: $width-register;
+        color: rgb(151, 151, 151);
+        &:hover{
+            border: 2px solid rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+
+@mixin article-h1-p(){
+    h1{
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    p{
+        font-weight: 600;
+        color: rgb(134, 133, 133);
+    }
+}

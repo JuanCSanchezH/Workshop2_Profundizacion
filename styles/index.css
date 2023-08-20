@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins:wght@400;600;700&display=swap");
+* {
+  font-family: "Epilogue", sans-serif;
+}
+
+.navbar {
+  background: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    border: none;
+  }
+  .offcanvas {
+    width: 70%;
+  }
+  .dropdown-menu {
+    width: 50%;
+    height: 180px;
+    padding: 25px;
+    border: none;
+  }
+  .dropdown-menu .dropdown-item {
+    display: flex;
+    gap: 17px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .dropdown-menu .dropdown-item__fig {
+    display: flex;
+    width: 15px;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .dropdown-menu .dropdown-item p {
+    margin-bottom: 0;
+    text-align: start;
+  }
+  .botones__login {
+    border: none;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .botones__register {
+    border: 2px solid rgb(151, 151, 151);
+    border-radius: 15px;
+    background-color: white;
+    width: 100%;
+    color: rgb(151, 151, 151);
+  }
+  .botones__register:hover {
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+  }
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .main__section {
+    height: 280px;
+    background-image: url("/images/image-hero-mobile.png");
+    background-size: 100%;
+    background-position-y: 94px;
+  }
+  .main__article {
+    text-align: center;
+    padding: 20px;
+  }
+  .main__article h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .main__article p {
+    font-weight: 600;
+    color: rgb(134, 133, 133);
+  }
+  .main__article h1 {
+    font-size: 2.1em;
+  }
+  .main__article__learnMore {
+    padding-inline: 35px;
+    border-radius: 15px;
+  }
+  .main__article__footer-imgs {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__article__footer-imgs--size {
+    width: 65px;
+  }
+  .main__section__figure {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar-brand {
+    padding-left: 20px;
+  }
+  .navbar-collapse {
+    padding-left: 20px;
+  }
+  .dropdown-menu {
+    width: 50%;
+    height: 180px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: -10px 10px 20px #e6e6e6, 10px -10px 20px #e6e6e6;
+  }
+  .dropdown-menu .dropdown-item {
+    display: flex;
+    gap: 17px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .dropdown-menu .dropdown-item__fig {
+    display: flex;
+    width: 15px;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .dropdown-menu .dropdown-item p {
+    margin-bottom: 0;
+    text-align: start;
+  }
+  .main__section__figure {
+    width: 100%;
+  }
+  .main {
+    display: flex;
+    padding: 40px 80px 80px 80px;
+    gap: 60px;
+  }
+  .main__section {
+    width: 50%;
+    background-image: url("/images/image-hero-desktop.png");
+    background-size: 100%;
+  }
+  .main__article {
+    margin-top: 40px;
+    padding: 50px;
+    width: 50%;
+  }
+  .main__article h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .main__article p {
+    font-weight: 600;
+    color: rgb(134, 133, 133);
+  }
+  .main__article h1 {
+    font-size: 5.5rem;
+  }
+  .main__article p {
+    width: 400px;
+  }
+  .main__article__learnMore {
+    padding-inline: 35px;
+    border-radius: 15px;
+  }
+  .main__article__footer-imgs {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__article__footer-imgs--size {
+    width: 80px;
+  }
+  .botones {
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+  }
+  .botones .botones__login {
+    border: none;
+    background-color: white;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .botones .botones__register {
+    border: 2px solid rgb(151, 151, 151);
+    border-radius: 15px;
+    background-color: white;
+    width: 150px;
+    color: rgb(151, 151, 151);
+  }
+  .botones .botones__register:hover {
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+  }
+  .botones__login {
+    margin-right: 20px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

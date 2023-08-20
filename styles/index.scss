@@ -1,0 +1,109 @@
+@use "./mixins" as m;
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins:wght@400;600;700&display=swap');
+
+$fontEpilogue: 'Epilogue', sans-serif;
+
+*{ font-family: $fontEpilogue;}
+.navbar{ background: white;}
+
+@media screen and (max-width: 768px) {
+
+    .navbar-toggler{ border: none;}
+    .offcanvas{ width: 70%;}
+    .dropdown-menu{
+        width: 50%;
+        height: 180px;
+        padding: 25px;
+        border: none;
+        @include m.dropdown-design;
+    }
+    
+    @include m.botones();
+
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        &__section{
+            height: 280px;
+            background-image: url('/images/image-hero-mobile.png');
+            background-size: 100%;
+            background-position-y: 94px;
+        }
+        &__article{
+            text-align: center;
+            padding: 20px;
+            @include m.article-h1-p();
+            h1{ font-size: 2.1em;}
+            &__learnMore{ 
+                padding-inline: 35px; 
+                border-radius: 15px;
+            }
+            &__footer-imgs{
+                display: flex;
+                justify-content: space-between;
+                &--size{ width: 65px;}
+            }
+        }
+    }
+    
+    @include m.font-design();
+}
+
+@media screen and (min-width: 768px) {
+
+    .navbar-brand{ padding-left: 20px;}
+    .navbar-collapse{ padding-left: 20px;}
+    .dropdown-menu{
+        width: 50%;
+        height: 180px;
+        padding: 25px;
+        border-radius: 18px;
+        box-shadow:  -10px 10px 20px #e6e6e6,
+                    10px -10px 20px #e6e6e6;
+                    
+        @include m.dropdown-design();
+    }
+
+    @include m.font-design();
+
+    .main{
+        display: flex;
+        padding: 40px 80px 80px 80px;
+        gap: 60px;
+        &__section{
+            width: 50%;
+            background-image: url('/images/image-hero-desktop.png');
+            background-size: 100%;
+        }
+        &__article{
+            margin-top: 40px;
+            padding: 50px;
+            width: 50%;
+            
+            @include m.article-h1-p();
+
+            h1{ font-size: 5.5rem;}
+            p{ width: 400px;}
+            &__learnMore{ 
+                padding-inline: 35px; 
+                border-radius: 15px;
+            }
+            &__footer-imgs{
+                display: flex;
+                justify-content: space-between;
+                &--size{ width: 80px;}
+            }
+        }
+    }
+    .botones{
+        display: flex;
+        justify-content: end;
+        padding: 20px; 
+
+        @include m.botones($width-login: 100px, $width-register: 150px);
+        
+        &__login{ margin-right: 20px;}
+    }
+}
